@@ -12,10 +12,8 @@ React Router is a powerful library that allows you to define routes in your Reac
 
 1. Routeing.
 
-2. Nested Routeing.
+2. Nested Routing.
 
-3. Navigating through different address.
-
-4. Passing prams and query.
+3. Dynamic Routing.
 
 This All I have tried and practiced. I will update this repository after I tried more of the other features available in the react Router Library.
