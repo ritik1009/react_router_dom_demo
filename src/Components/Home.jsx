@@ -16,10 +16,13 @@ function Home() {
       <h1>This is the Home</h1>
       <h3>Testing the Params</h3>
       <input type="text" value={name} onChange={handleChange} />
-      <button onClick={() => navigate(`/profile/${name}`)}>Go to Profile</button>
+      <button onClick={() => navigate(`/profile/${name}`)}>
+        Go to Profile
+      </button>
       <br />
       <button onClick={() => navigate("/contact")}>Contact</button>
       <button onClick={() => navigate("/about")}>About</button>
+      <button onClick={() => navigate("/users")}>User</button>
     </div>
   );
 }

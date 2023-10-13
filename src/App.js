@@ -15,6 +15,8 @@ import Friends from "./Components/Friends";
 import Request from "./Components/Request";
 import Stranger from "./Components/Stranger";
 import ContactSearch from "./Components/ContactSearch";
+import User from "./Components/User";
+import UserDetails from "./Components/UserDetails";
 
 function App() {
   const navigationActive = ({ isActive }) => {
@@ -36,10 +38,15 @@ function App() {
         <NavLink style={navigationActive} to="contact">
           Contact
         </NavLink>
+        <NavLink style={navigationActive} to="users">
+          User
+        </NavLink>
       </nav>
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/users" element={<User />} />
+        <Route path="/users/:id/:name" element={<UserDetails />} />
         <Route path="/contact" element={<Contact />}>
           <Route path="friends" element={<Friends />} />
           <Route path="request" element={<Request />} />
